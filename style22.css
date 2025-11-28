@@ -1,0 +1,49 @@
+
+/* Responsive */
+@media (max-width:900px){
+.hero{grid-template-columns:1fr;}
+.grid-3{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:600px){
+nav.main-nav{display:none}
+.grid-3{grid-template-columns:1fr}
+.container{padding:16px}
+}
+
+
+/* Dashboard specific */
+.dashboard-layout{display:grid;grid-template-columns:250px 1fr;gap:18px;min-height:80vh}
+.sidebar{background:#071018;padding:20px;border-radius:12px}
+.sidebar a{display:block;color:var(--muted);padding:10px;border-radius:8px;text-decoration:none;margin-bottom:6px}
+.sidebar a.active{color:var(--white);background:linear-gradient(90deg, rgba(255,255,255,0.02), transparent)}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:12px 0}
+.charts{display:grid;grid-template-columns:1fr 420px;gap:18px}
+.cards{display:flex;gap:12px}
+
+
+/* Login page */
+.auth-wrap{display:grid;place-items:center;min-height:80vh}
+.auth-card{background:var(--panel);padding:28px;border-radius:12px;width:380px}
+.form-group{margin-bottom:12px}
+input[type=text], input[type=password]{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--white)}
+
+
+/* Utility */
+.kv{display:flex;justify-content:space-between;align-items:center}
+.badge{padding:6px 8px;background:rgba(255,255,255,0.04);border-radius:999px}
+
+
+/* Simple table for timetable */
+.timetable{width:100%;border-collapse:collapse}
+.timetable th, .timetable td{padding:10px;border:1px solid rgba(255,255,255,0.03);color:var(--muted)}
+
+
+/* Cards */
+.card-plain{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:16px;border-radius:10px}
+
+
+/* small screens dashboard */
+@media (max-width:900px){
+.dashboard-layout{grid-template-columns:1fr}
+.charts{grid-template-columns:1fr}
+}

@@ -8,10 +8,6 @@
     <title></title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-
         .OUR {
             text-align: center;
 
@@ -37,29 +33,61 @@
             display: flex;
             gap: 2em;
             margin-top: 2em;
+            height: 60vh;
         }
 
         .FOOT {
             display: flex;
             gap: 1em;
+            margin-top: 5em;
         }
 
         .FOOT ul {
             flex-direction: column;
             list-style: none;
-         
+
         }
+
+        .footer {
+            background-color: rgb(47, 47, 81);
+            color: white;
+            height: 360px;
+            padding: 3px;
+
+        }
+
+        .aa p {
+            color: white;
+        }
+
+        .cont {
+            display: flex;
+            gap: 4em;
+            margin-left: 20em;
+
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 1.7em;
+
+        }
+
+      
     </style>
 </head>
 
 <body>
     <!-- header -->
     <div class="header">
-        <h1>POWER GYM</h1>
+       
+        <h1>  POWER GYM</h1>
         <div class="list">
             <ul>
                 <li>HOME</li>
-                <li>CLASS</li>
+                <li> <a href="classes.html">CLASS</a></li>
                 <li>TIMETABLE</li>
                 <li>ABOUTUS</li>
                 <li>TRAINING</li>
@@ -195,24 +223,49 @@
 
     </div>
 
-    <footer>
+    <footer class="footer ">
         <div class="left">
             <div class="FOOT">
                 <div>
-
-
                     <h1>POWER GYM</h1>
                     <p>Going to the gym is a personal journey <br> toward becoming the best version of yourself.</p>
                 </div>
-                <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#class">CLASS</a></li>
-                    <li><a href="#TIMETABLE">TIMETABLE</a></li>
-                    <li><a href="#ABOUTUS">ABOUTUS</a></li>
-                    <li><a href="#TRINING">TRAINING</a></li>
-                </ul>
+                <div>
+                    <h1 style="color:red">Quick link</h1>
+                    <br>
+                    <div class=" aa">
+                        <a href="#home">HOME</a> <br> <br>
+                        <a href="#class">CLASS</a> <br> <br>
+                        <a href="#TIMETABLE">TIMETABLE</a> <br> <br>
+                        <a href="#ABOUTUS">ABOUTUS</a> <br> <br>
+                        <a href="#TRINING">TRAINING</a>
+
+                    </div>
+                </div>
+                <div class="cont">
+                    <div>
+                        <p style="font-size: 1.8em;">Contact</p> <br>
+                        <p> <i class="fa-solid fa-location-dot"> </i> 123 Fitness Street, NY 10001</p>
+                        <p> <i class="fa-solid fa-phone"> </i>(555) 123-4567</p>
+                        <p> <i class="fa-solid fa-envelope"> </i>info@powergym.com</p>
+                    </div>
+                    <div class="right1">
+
+                        <h1> follow us</h1>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+
             </div>
 
+
+        </div>
+        <hr>
+        <div class="container">
+            <div>© 2025 POWER GYM</div>
+            <div class="small">Contact: hello@powergym.example</div>
         </div>
     </footer>
 </body>
