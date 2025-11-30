@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Classes</title>
+    <link rel="stylesheet" href="dashboard.css">
+     <style>
+    .lll a{
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <aside class="sidebar">
+        <h2 class="logo">GYM<span>Admin</span></h2>
+        <ul class="menu">
+            <li>Dashboard</li>
+            <li class="active">Manage Classes</li>
+              <li class="lll"> <a href="trainers.html">Manage Trainers</a></li>
+            <!-- <li>Manage Trainers</li> -->
+            <li>Timetable</li>
+            <li>Memberships</li>
+            <li>Settings</li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <header class="topbar">
+            <input type="text" class="search" placeholder="Search classes...">
+            <div class="top-icons">
+                <span>🔔</span>
+                <img src="https://via.placeholder.com/35" class="profile">
+            </div>
+        </header>
+
+        <div class="card">
+            <h3>Manage Classes</h3>
+
+            <table>
+                <tr><th>Class</th><th>Trainer</th><th>Capacity</th><th>Action</th></tr>
+                <tr><td>Cardio Blast</td><td>Khalid</td><td>25</td><td>Edit</td></tr>
+                <tr><td>Yoga</td><td>Fatima</td><td>20</td><td>Edit</td></tr>
+                <tr><td>Strength</td><td>Omar</td><td>30</td><td>Edit</td></tr>
+            </table>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>

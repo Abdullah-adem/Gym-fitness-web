@@ -1,64 +1,160 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Gym — Admin Dashboard</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Admin Dashboard</title>
   <link rel="stylesheet" href="dashboard.css">
+  <style>
+    .lll a{
+      text-decoration: none;
+      color: black;
+    }
+  </style>
 </head>
-<body style="background: white;">
-  <div class="container">
-    <div class="dashboard-layout">
-      <aside class="sidebar">
-        <div style="font-weight:700;margin-bottom:12px">Admin</div>
-        <a href="#" class="active">Dashboard</a>
-        <a href="#">Manage Classes</a>
-        <a href="#">Manage Trainers</a>
-        <a href="#">Timetable</a>
-        <a href="#">Memberships</a>
-        <a href="#">Settings</a>
-      </aside>
-      <section style="padding:18px">
-        <div class="topbar">
-          <h2 style="margin-left:150%; color: black;">Dashboard</h2>
-          <div style="display:flex;gap:12px;align-items:center">
-            <input placeholder="Search..." style="padding:10px;border-radius:8px; margin-left: 90%;  background:transparent;border:1px solid rgba(241, 19, 19, 0.04);color:white)">
-            <div class="badge small">Notifications</div>
-          </div>
+
+<body>
+
+  <div class="dashboard-container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <h2 class="logo">POWER<span>GYM</span></h2>
+      <ul class="menu">
+        <li class="active">Dashboard</li>
+        <li class="lll"> <a href="manegerclasses.html">Manage Classe</a></li>
+        <li> </a>Manage Trainers</li>
+        <li  >Timetable </li>
+        <li>  Memberships</li>
+        
+        <!-- <li>Settings</li> -->
+      </ul>
+    </div>
+
+    <!-- MAIN CONTENT AREA -->
+    <main class="main-content">
+
+      <!-- TOP BAR -->
+      <header class="topbar">
+        <input type="text" class="search" placeholder="Search...">
+        <button><a href="login1.html">LOGIN</a></button>
+        <div class="top-icons">
+          <span class="notif"></span>
+          <!-- <img src="https://via.placeholder.com/35" class="profile"> -->
         </div>
- 
-        <div class="">
-          <div class="cards">
-            <div class="card-plain"><div class="small">Total Members</div><strong>1,254</strong></div>
-            <div class="card-plain"><div class="small">Active Classes</div><strong>32</strong></div>
-            <div class="card-plain"><div class="small">Trainers</div><strong>14</strong></div>
-            <div class="card-plain"><div class="small">Monthly Revenue</div><strong>$6,800</strong></div>
-          </div>
+      </header>
 
-          <div class="charts" style="margin-top:18px">
-            <div class="card-buu" style="min-height:200px">
-              <h3>Members (last 12 months)</h3>
-              <p class="small">Static chart placeholder — replace with chart library when converting to a dynamic site.</p>
-            </div>
-            <div class="card-buu" style="min-height:200px">
-              <h3>Class Attendance</h3>
-              <p class="small">Bar chart placeholder.</p>
-            </div>
-          </div>
-
-          <div style="margin-top:18px">
-            <h3 style="margin-bottom:8px">Recent Members</h3>
-            <table class="table">
-              <thead><tr><th>Name</th><th>Plan</th><th>Joined</th></tr></thead>
-              <tbody>
-                <tr><td>Ahmed</td><td>Pro</td><td>2025-10-01</td></tr>
-                <tr><td>Mariam</td><td>Starter</td><td>2025-09-20</td></tr>
-              </tbody>
-            </table>
-          </div>
-
+      <!-- STAT CARDS -->
+      <section class="stats-grid">
+        <div class="card">
+          <h3>Total Members</h3>
+          <p>1,254</p>
+        </div>
+        <div class="card">
+          <h3>Active Classes</h3>
+          <p>32</p>
+        </div>
+        <div class="card">
+          <h3>Trainers</h3>
+          <p>14</p>
+        </div>
+        <div class="card">
+          <h3>Monthly Revenue</h3>
+          <p>$8,920</p>
         </div>
       </section>
-    </div>
+
+      <!-- CHARTS -->
+      <section class="chart-section">
+        <!-- <div class="chart card">
+          <h3>Monthly Members</h3>
+          <div class="line-chart"></div>
+        </div> -->
+
+        <div class="chart card">
+          <h3>Class Attendance</h3>
+          <div class="bar-chart">
+            <div style="height: 60%;"></div>
+            <div style="height: 90%;"></div>
+            <div style="height: 40%;"></div>
+            <div style="height: 75%;"></div>
+            <div style="height: 55%;"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TABLES -->
+      <section class="tables-grid">
+
+        <!-- Recent Members -->
+        <div class="table card">
+          <h3>Recent Members</h3>
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Joined</th>
+              <th>Status</th>
+            </tr>
+            <tr>
+              <td>Ali Mohamed</td>
+              <td>Jan 20</td>
+              <td>Active</td>
+            </tr>
+            <tr>
+              <td>Amina Yusuf</td>
+              <td>Jan 19</td>
+              <td>Active</td>
+            </tr>
+            <tr>
+              <td>Hassan Abdullahi</td>
+              <td>Jan 18</td>
+              <td>Pending</td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Upcoming Classes -->
+        <div class="table card">
+          <h3>Upcoming Classes</h3>
+          <table>
+            <tr>
+              <th>Class</th>
+              <th>Trainer</th>
+              <th>Time</th>
+            </tr>
+            <tr>
+              <td>Cardio Blast</td>
+              <td>Khalid</td>
+              <td>10:00 AM</td>
+            </tr>
+            <tr>
+              <td>Strength</td>
+              <td>Sara</td>
+              <td>1:00 PM</td>
+            </tr>
+            <tr>
+              <td>Boxing</td>
+              <td>Omar</td>
+              <td>4:00 PM</td>
+            </tr>
+          </table>
+        </div>
+
+      </section>
+
+      <!-- QUICK ACTIONS -->
+      <!-- <section class="quick-actions card">
+        <button>Add New Class</button>
+        <button>Add Trainer</button>
+        <button>Add Timetable Slot</button>
+      </section> -->
+
+    </main>
+
   </div>
+
 </body>
+
 </html>

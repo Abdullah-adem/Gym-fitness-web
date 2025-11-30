@@ -1,51 +1,240 @@
-*{
-    padding: 0;
+
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-
-
-.dashboard-layout{display:grid;
-    grid-template-columns:250px 1fr;
-    gap:18px;min-height:80vh;
+body {
+    background: #f4f4f4;
 }
-.sidebar{background:#0879db;
-    padding:20px;
+
+.dashboard-container {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 23%;
+    background:rgb(64, 64, 144);
     position: fixed;
-    width: 20%;
-    height: 100vh;
- 
+    min-height: 100vh;
+    padding: 20px;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.1);
 }
-.sidebar a{display:block;
-    color:var(--muted);
-    padding:10px; 
-    border-radius:8px;
-    text-decoration:none;
-    margin-bottom:6px}
-.sidebar a.active{color:white;
-    background:linear-gradient(90deg, rgba(226, 6, 6, 0.02), transparent)}
-.topbar{
-    display:flex;
-  margin-left: 22%;
-    justify-content:space-between;
-    align-items:center;
-    padding:12px 0}
-.charts{display:grid;
-    grid-template-columns:1fr 420px;
-    margin-left: 100%;
-    gap:18px}
-.cards{
-    display:flex;
-    gap:2em;
- 
-     margin-left: 160%;
+
+.logo {
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #007bff;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    padding: 12px 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.menu li.active,
+.menu li:hover {
+    background: #007bff;
+    color: white;
+}
+
+/* MAIN */
+.main-content {
+    flex: 1;
+    margin-left: 24%;
+    padding: 20px;
+}
+
+/* TOPBAR */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.search {
+    width: 250px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.top-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.profile {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+/* CARDS */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* CHARTS */
+.chart-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.line-chart {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to right, #d6e8ff, #a4c8ff);
+    border-radius: 10px;
+}
+
+.bar-chart {
+    display: flex;
+    gap: 10px;
+    height: 200px;
+    align-items: flex-end;
+}
+
+.bar-chart div {
+    flex: 1;
+    background: #007bff;
+    border-radius: 8px;
+}
+
+/* TABLES */
+.tables-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* QUICK ACTIONS */
+.quick-actions {
+    display: flex;
+    gap: 20px;
+}
+
+.quick-actions button {
+    padding: 12px 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+}
+
+
+
+/* login css */
+
+/* LOGIN PAGE */
+.login-body {
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    width: 350px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+
+.topbar input{
+    width: 100%;
+}
+
+.card:hover{
+    background-color: peru;
+    transition: 2s;
+}
+.topbar button{
+    width: 10%;
+    height: 30px;
+    margin-left: 1em;
+      background-color: black;
 
 }
-.card-plain{
-    background-color: #b0b1b1;
-    /* padding: 2em; */
-    width: 90em;
+.topbar button a {
+    text-decoration: none;
+    color: white;
  
-   
-    /* border-radius: 23px; */
 }

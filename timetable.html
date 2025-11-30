@@ -1,86 +1,474 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Gym — Timetable</title>
-    <link rel="stylesheet" href="style22.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .claass {
+            gap: 1em;
+            padding-top: 4em;
+            /* margin-top: 2em; */
+            /* background-image: url(Decorating\ Your\ Home\ Gym_\ Aesthetics\ For\ That\ Perfect\ Workout\ -\ Rhian\ Westbury.jpg); */
+            background-size: cover;
+            height: 30vh;
+
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+
+
+        .timetable {
+            text-align: center;
+            width: 100%;
+            /* background-color: blue; */
+
+        }
+
+        .timetable thead {
+            background-color: rgb(11, 13, 13);
+            font-size: 1.6em;
+            width: 100%;
+            color: white;
+        }
+
+        table tbody tr {
+            border-bottom: 1px solid rgb(201, 58, 58);
+            background-color: rgb(255, 255, 255);
+            color: rgb(11, 11, 11);
+            height: 10vh;
+        }
+
+        table tbody tr:nth-of-type(3) {
+            /* background-color: rgb(223, 219, 219);
+            color: green; */
+        }
+
+        table tbody tr:last-of-type {
+            border-bottom: 1px solid greenyellow;
+        }
+
+        table tbody tr:hover {
+            background-color: blueviolet;
+            color: rgb(24, 23, 23);
+        }
+
+        table tbody tr:nth-of-type(1) {
+            background-color: chocolate;
+            color: white;
+
+        }
+
+        table tbody tr:nth-of-type(2) {
+            background-color: chocolate;
+            color: white;
+
+        }
+
+        table tbody tr:nth-of-type(3) {
+            background-color: chocolate;
+            color: white;
+
+        }
+
+        .descrriptions {
+            text-align: center;
+            gap: 1em;
+            height: 30vh;
+            font-size: 2em;
+            background-color: black;
+            color: aliceblue;
+            margin-top: 0.1em;
+        }
+
+        .box {
+            padding: 1em;
+            background-color: #101828;
+            color: aliceblue;
+            width: 30%;
+        }
+
+        .cuu {
+            display: flex;
+            gap: 2em;
+            margin-bottom: 2em;
+
+            /* background-color: black; */
+        }
+
+        .muu {
+            background-color: black;
+            padding: 2em;
+            height: 60vh;
+        }
+
+        .rush {
+            text-align: center;
+            font-size: 2em;
+        }
+
+        .rush {
+            text-align: center;
+        }
+
+        .basic {
+            /* background-color: blue; */
+            /* width: 30%; */
+            font-size: 1em;
+            padding-left: 1.3em;
+            /* margin-bottom: 2em; */
+
+        }
+
+        .basic i {
+            color: red;}
+        .basic1 i {
+            color: red;
+
+
+        }
+
+        button {
+            width: 40%;
+            height: 30px;
+            background-color: red;
+            border: none;
+            font-size: 0.5em;
+            margin-bottom: 1em;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .basic1 {
+            padding-left: 2em;
+        }
+
+        .member {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-left: 12%;
+            gap: 8em;
+            margin-bottom: 2em;
+            height: 70vh;
+        }
+
+        .most {
+            background-color: red;
+            color: white;
+            padding: 1em;
+            /* height: 80vh */
+            font-size: 1.2em;
+        }
+
+        .FOOT {
+            display: flex;
+            gap: 1em;
+            /* position: fixed; */
+            margin-top: 5em;
+        }
+
+        .FOOT ul {
+            flex-direction: column;
+            list-style: none;
+
+        }
+
+        .footer {
+            background-color: rgb(47, 47, 81);
+            color: white;
+            height: 360px;
+            padding: 3px;
+
+        }
+
+        .aa a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .aa p {
+            color: white;
+        }
+
+        .cont {
+            display: flex;
+            gap: 4em;
+            margin-left: 20em;
+
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 1.2em;
+          
+
+        }
+
+
+
+        .list {
+            display: flex;
+            gap: 1.4em;
+            margin-right: 5em;
+        }
+
+        .header {
+            display: flex;
+            position: fixed;
+            width: 100%;
+            justify-content: space-between;
+            padding-left: 2em;
+            padding-right: 2em;
+            background-color: black;
+            color: white;
+            /* height: 50px; */
+            padding: 1em;
+        }
+
+        ul {
+            display: flex;
+
+            gap: 2em;
+            list-style: none;
+            margin-top: 0.5em;
+            font-size: 1em;
+        }
+
+        .button1 {
+            width: 20%;
+            text-align: center;
+            background-color: brown;
+            border-radius: 0.5em;
+            border: none;
+            color: white;
+            padding: 1em;
+        }
+        .lll a{
+      text-decoration: none;
+      color:white;
+    }
+    </style>
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="container header-inner">
-            <div class="logo">IRON <span style="color:var(--accent)">HUB</span></div>
-            <nav class="main-nav">
-                <a href="index.html">Home</a>
-                <a href="classes.html">Classes</a>
-                <a href="timetable.html" class="active">Timetable</a>
-                <a href="about.html">About Us</a>
-                <a href="training.html">Training</a>
-            </nav>
-            <div style="display:flex;gap:12px;align-items:center">
-                <a class="btn" href="login.html">Login</a>
+    <div class="header">
+
+        <h1> POWER GYM</h1>
+        <div class="list">
+            <ul>
+                <li>HOME</li>
+                <li class="lll"> <a href="classes.html">CLASS</a></li>
+                <li>TIMETABLE</li>
+                <li>ABOUTUS</li>
+                <li>TRAINING</li>
+            </ul>
+            <BUtton class="button1">DASHBOAD</BUtton>
+        </div>
+    </div>
+    <div class="claass">
+        <h1>Class Timetable</h1>
+        <p>Browse our weekly schedule and plan your fitness routine</p>
+
+    </div>
+    <table class="timetable">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>06:00</td>
+                <td>HIIT</td>
+                <td>Yoga</td>
+                <td>Strength</td>
+                <td>HIIT</td>
+                <td>Strength</td>
+            </tr>
+
+            <tr>
+                <td>08:00</td>
+                <td>Strength</td>
+                <td>Cardio</td>
+                <td>Yoga</td>
+                <td>Strength</td>
+                <td>Cardio</td>
+            </tr>
+            <tr>
+                <td>18:00</td>
+                <td>Yoga</td>
+                <td>HIIT</td>
+                <td>Strength</td>
+                <td>Yoga</td>
+                <td>HIIT</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+    <div class="descrriptions">
+        <h1>Class Descriptions</h1> <br>
+        <p>Learn more about each class type</p>
+    </div>
+    <div class="muu">
+        <div class="cuu">
+            <div class="box">
+                <h1>Strength Training</h1> <br>
+                <p style="color: red;">60 min Intensity: High</p> <br>
+                <p>Build muscle mass and increase overall strength with compound movements and progressive overload.</p>
+            </div>
+            <div class="box">
+                <h1>Cardio Blast</h1> <br>
+                <p style="color: red;">30 min Intensity: High</p> <br>
+                <p>Build muscle mass and increase overall strength with compound movements and progressive overload.</p>
+            </div>
+            <div class="box">
+                <h1>Yoga & Stretch</h1> <br>
+                <p style="color: red;">60 min Intensity: High</p> <br>
+                <p>Build muscle mass and increase overall strength with compound movements and progressive overload.</p>
+            </div>
+
+        </div>
+
+        <div class="cuu">
+            <div class="box">
+                <h1>HIIT Training</h1> <br>
+                <p style="color: red;">60 min Intensity: High</p> <br>
+                <p>Build muscle mass and increase overall strength with compound movements and progressive overload.</p>
+            </div>
+            <div class="box">
+                <h1>Spin Class</h1> <br>
+                <p style="color: red;">30 min Intensity: High</p> <br>
+                <p>Build muscle mass and increase overall strength with compound movements and progressive overload.</p>
+            </div>
+            <div class="box">
+                <h1>Boxing</h1> <br>
+                <p style="color: red;">60 min Intensity: High</p> <br>
+                <p>Build muscle mass and increase overall strength with compound movements and progressive overload.</p>
             </div>
         </div>
-    </header>
-    <main class="container">
-        <section class="section">
-            <h2>Weekly Timetable</h2>
-            <table class="timetable">
-                <thead>
-                    <tr>
-                        <th>Time</th>
-                        <th>Mon</th>
-                        <th>Tue</th>
-                        <th>Wed</th>
-                        <th>Thu</th>
-                        <th>Fri</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>06:00</td>
-                        <td>HIIT</td>
-                        <td>Yoga</td>
-                        <td>Strength</td>
-                        <td>HIIT</td>
-                        <td>Strength</td>
-                    </tr>
-                    <tr>
-                        <td>08:00</td>
-                        <td>Strength</td>
-                        <td>Cardio</td>
-                        <td>Yoga</td>
-                        <td>Strength</td>
-                        <td>Cardio</td>
-                    </tr>
-                    <tr>
-                        <td>18:00</td>
-                        <td>Yoga</td>
-                        <td>HIIT</td>
-                        <td>Strength</td>
-                        <td>Yoga</td>
-                        <td>HIIT</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+    </div>
+    <div class="rush">
+        <h1>Membership Options</h1> <br>
+        <p>Choose the plan that fits your fitness goals</p>
+    </div>
+
+    <div class="member">
 
 
-        <section class="section">
-            <h2>Filter & Info</h2>
-            <p class="small">Use the admin dashboard to update slots and trainers. This static template shows how the
-                table will look.</p>
-        </section>
-
-
-        <footer class="footer">
-            <div class="container kv">
-                <div>© 2025 IRON HUB</div>
-                <div class="small">Contact: hello@ironhub.example</div>
+        <div class="basic">
+            <div class="basic1">
+                <h1>BASIC</h1>
+                <h3>$39</h3>
+                <p>per month</p> <br>
             </div>
-        </footer>
-    </main>
+
+
+            <p> <i class="fa-solid fa-check"></i>Access to gym floor</p> <br>
+            <p> <i class="fa-solid fa-check"></i>Standard equipment</p> <br>
+            <p> <i class="fa-solid fa-check"></i>Locker access</p> <br>
+            <p> <i class="fa-solid fa-check"></i>2 classes per week</p> <br>
+            <button> select plan</button>
+        </div>
+
+        <div class="most">
+            <div class="up">
+                <h1>Premium</h1>
+                <h2>$65</h2>
+                <p>per month</p>
+            </div><br>
+            <div class="dowm">
+                <p><i class="fa-solid fa-check"></i> All Basic features</p> <br>
+                <p> <i class="fa-solid fa-check"></i>Unlimited classes</p> <br>
+                <p> <i class="fa-solid fa-check"></i>Personal trainer session</p> <br>
+                <p> <i class="fa-solid fa-check"></i>Nutrition consultation</p> <br>
+                <button style="background-color: aliceblue ; color:red; font-size: 0.5em;"> select plan</button>
+            </div>
+
+        </div>
+        <div class="hub">
+            <div class="lop">
+                <h1>Elite</h1>
+                <h2>$99</h2>
+                <p>per month</p>
+            </div> <br>
+            <div class="basic1">
+                <p> <i class="fa-solid fa-check"></i>All Premium feature</p> <br>
+                <p> <i class="fa-solid fa-check"></i>4 PT sessions/month</p> <br>
+                <p> <i class="fa-solid fa-check"></i>Guest passes</p> <br>
+                <p> <i class="fa-solid fa-check"></i>Priority booking</p> <br>
+                <button> SELECT PLAN</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer class="footer ">
+        <div class="left">
+            <div class="FOOT">
+                <div>
+                    <h1>POWER GYM</h1>
+                    <p>Going to the gym is a personal journey <br> toward becoming the best version of yourself.</p>
+                </div>
+                <div>
+                    <h1 style="color:red">Quick link</h1>
+                    <br>
+                    <div class=" aa">
+                        <a href="#home">HOME</a> <br> <br>
+                        <a href="#class">CLASS</a> <br> <br>
+                        <a href="#TIMETABLE">TIMETABLE</a> <br> <br>
+                        <a href="#ABOUTUS">ABOUTUS</a> <br> <br>
+                        <a href="#TRINING">TRAINING</a>
+
+                    </div>
+                </div>
+                <div class="cont">
+                    <div>
+                        <p style="font-size: 1.8em;">Contact</p> <br>
+                        <p> <i class="fa-solid fa-location-dot"> </i> 123 Fitness Street, NY 10001</p>
+                        <p> <i class="fa-solid fa-phone"> </i>(555) 123-4567</p>
+                        <p> <i class="fa-solid fa-envelope"> </i>info@powergym.com</p>
+                    </div>
+                    <div class="right1">
+
+                        <h1> follow us</h1>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <hr>
+        <div class="container">
+            <div>© 2025 POWER GYM</div>
+            <div class="small">Contact: hello@powergym.example</div>
+        </div>
+    </footer>
+
+
 </body>
 
 </html>
