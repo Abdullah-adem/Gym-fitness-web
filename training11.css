@@ -1,0 +1,488 @@
+       .list {
+            display: flex;
+            gap: 1.4em;
+            margin-right: 5em;
+        }
+
+        .header {
+            display: flex;
+            position: fixed;
+            width: 100%;
+            justify-content: space-between;
+            padding-left: 2em;
+            padding-right: 2em;
+            background-color: black;
+            color: white;
+            /* height: 50px; */
+            padding: 1em;
+        }
+
+        ul {
+            display: flex;
+
+            gap: 2em;
+            list-style: none;
+            margin-top: 0.5em;
+            font-size: 1em;
+        }
+
+        button {
+            width: 20%;
+            text-align: center;
+            background-color: brown;
+            border-radius: 0.5em;
+            border: none;
+            color: white;
+            padding: 1em;
+        }
+
+
+#SECTION{
+  background-color:#F5F5F5;
+  color: #0f1113;
+  padding: 40px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#left{
+  margin-top: 30px;
+  overflow: hidden;
+  width:40%;
+  margin-right: 30px;
+}
+
+#right{
+  width: 50%;
+  margin-left: 40px;
+}
+#right h1{
+  color: #d72631;
+  font-weight: 900px;
+ padding-top: 10px;
+  font-size: 38px;
+ margin-bottom: 20px; 
+}
+
+#right p{
+   /* letter-spacing: 2px;  */
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+
+
+.pic{
+  width: 100%;
+  height: 60%; 
+  object-fit: cover;
+  border-radius: 10px; 
+}
+
+.bogga {
+ width:50%;
+  margin: 24px auto;
+  padding: 20px;
+}
+
+.sifooyinka {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 40px;
+  align-items: start;
+}
+
+.shay {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.astaanta {
+  flex: 0 0 56px;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.astaanta__icon {
+  width: 56px;
+  height: 56px;
+  display: block;
+}
+
+.tilmaam {
+  flex: 1;
+}
+.tilmaam__ciwaanka {
+  font-size: 15px;
+  color: #4a4a4a;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+.tilmaam__faahfaahin {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #777;
+}
+
+
+.tababarayaasha {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cinwaan {
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+}
+
+.hoos-cinwaan {
+    color: #666;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 0 40px;
+}
+
+.box {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.box img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.qoraal-box {
+    padding: 20px;
+    text-align: left;
+}
+
+.magac {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.khibrad-nooc {
+    color: #d14b4b;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.sanado {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.shahaado-cinwaan {
+    color: #333;
+    font-size: 13px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.shahaadooyin span {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #eee;
+    border-radius: 4px;
+    margin-right: 5px;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.SECTION-2{
+ background-color: white;
+}
+
+.weelend {
+  display: flex;
+  justify-content: center;
+  padding: 24px 20px 60px;
+}
+.xirmooyinka {
+  display: grid;
+  grid-template-columns: 320px 360px 320px;
+  gap: 28px;
+  align-items: start;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: 80px;
+}
+.xirmo {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: 6px;
+  padding: 32px 24px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.55);
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.xirmo--bilow {
+  background: #222327;
+  color: #fff;
+}
+.xirmo--sare {
+  background: #222327;
+  color: #fff;
+}
+.xirmo--dhexe {
+  background: #e3362f; 
+  color: #fff;
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(227,54,47,0.25);
+}
+
+.badge {
+  position: absolute;
+  margin-top: 25px;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+ background-color: #0b0c0d;
+  color: #fff;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 4px;
+  letter-spacing: 1px;
+}
+
+.xirmo__magac {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+}
+.xirmo__kadar {
+  color: rgba(255,255,255,0.75);
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+.xirmo__qiimo {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.xirmo__qiimo--jeex { margin-top: 6px; margin-bottom: 20px; }
+.qiimo__lacag {
+  font-size: 34px;
+  font-weight: 700;
+  color: inherit;
+}
+.qiimo__yaryar {
+  font-size: 12px;
+  color: rgba(255,255,255,0.85);
+  display: block;
+}
+
+.xirmo__liiska {
+  list-style: none;
+  margin-top: 6px;
+  margin-bottom: 26px;
+  flex: 1 0 auto;
+}
+.liiska__shay {
+  padding-left: 28px;
+  margin-bottom: 12px;
+  position: relative;
+  color: rgba(255,255,255,0.93);
+  font-size: 14px;
+}
+
+.liiska__shay::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #ff7f50; 
+  font-weight: 700;
+}
+
+.badhamo {
+  display: inline-block;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 4px;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  align-self: stretch;
+  text-align: center;
+}
+.badhamo--madow {
+  background: #d33a2f;
+  color: white;
+  box-shadow: 0 6px 0 rgba(0,0,0,0.2);
+}
+.badhamo--iftiin {
+  background: #fff;
+  color: #e3362f;
+  font-weight: 600;
+  box-shadow: 0 6px 0 rgba(0,0,0,0.08);
+}
+
+
+.haye{
+  background: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.xarunta-madaxa-1 {
+ padding-top: 30px;
+  background-color: #F5F5F5;
+  max-width: 900px;
+  margin: auto; 
+  height: 40vh;
+  border-radius: 10px;
+}
+
+
+
+.ciwaanka {
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.qoraal-hoosaad {
+  max-width: 700px;
+  margin: auto;
+  color: #555;
+  line-height: 1.5;
+}
+
+.boos-badhamo {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.badhanka-cas,
+.badhanka-madow {
+  padding: 12px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.badhanka-cas {
+  background: #c62828;
+}
+
+.badhanka-madow {
+  background: #000;
+}
+
+.faahfaahin {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #777;
+}
+
+.sifo-section {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.sifo {
+  background: #111;
+  color: white;
+  padding: 25px 15px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.sifo-icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.sifo-ciwaan {
+  margin: 5px 0;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.sifo-qoraal {
+  font-size: 13px;
+  color: #ddd;
+  margin-top: 5px;
+}
+    .FOOT {
+            display: flex;
+            gap: 1em;
+            /* position: fixed; */
+            margin-top: 5em;
+        }
+
+        .FOOT ul {
+            flex-direction: column;
+            list-style: none;
+
+        }
+
+        .footer {
+            background-color: rgb(47, 47, 81);
+            color: white;
+            height: 360px;
+            padding: 3px;
+
+        }
+
+        .aa a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .aa p {
+            color: white;
+        }
+
+        .cont {
+            display: flex;
+            gap: 4em;
+            margin-left: 20em;
+
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 1.2em;
+          
+
+        }
